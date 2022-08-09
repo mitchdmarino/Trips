@@ -9,7 +9,8 @@ export default function Navbar( {currentUser, handleLogout} ) {
             </Link>{' | '}
             <Link to='/profile'>
                 Profile
-            </Link>
+            </Link>{' | '}
+            <Link to='/trips'>Trips</Link>
         </>
     )
 
@@ -24,8 +25,9 @@ export default function Navbar( {currentUser, handleLogout} ) {
         <nav>
             {/* user always sees this section */}
             <Link to='/'>
-                <p>User App</p>
+                <p>App</p>
             </Link>
+       
             {
                 currentUser ? 
                 loggedIn: loggedOut

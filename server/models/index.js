@@ -19,4 +19,5 @@ db.on("error", (err) => {
 module.exports = {
   // export db models
   User: require("./user"),
+  Trip: require("./trip"),
 };
